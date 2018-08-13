@@ -1,0 +1,38 @@
+
+alias instal='sudo apt-get install'
+
+
+#personal
+alias fb='pass -c facebook'
+alias alist='sudo xed  ~/.bashrc '
+
+#git
+alias add='git add *'
+alias gc='git commit -m '
+alias pull='git pull origin develop'
+alias push='git push origin develop'
+alias fs='git flow feature start '
+alias ff='git flow feature finish '
+alias gs='git status'
+alias gb='git branch'
+
+
+#servers
+alias nginx='sudo service nginx restart'
+alias pystop='sudo service nginx stop'
+alias pystart='sudo service nginx start'
+alias phpstart='sudo service apache2 start'
+alias phpstop='sudo service apache2 stop'
+alias nlog='vi /var/log/nginx/error.log'
+alias ruta='sudo xed /etc/nginx/sites-available/rutas'
+
+
+#environments folder
+alias bac='cd /home/pedro/Documents/proyectos/'
+alias fro='cd /var/www/html/'
+
+
+#miscelanios
+alias ser='grep -r -n '
+alias sshkey='cat ~/.ssh/id_rsa.pub | xclip -sel clip'
+alias pyserv='python3.5 -m http.server 8000'
