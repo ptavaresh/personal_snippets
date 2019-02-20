@@ -3,7 +3,6 @@ alias instal='sudo apt-get install'
 
 
 #personal
-alias fb='pass -c facebook'
 alias alist='sudo xed  ~/.bashrc '
 
 #git
@@ -16,7 +15,6 @@ alias ff='git flow feature finish '
 alias gs='git status'
 alias gb='git branch'
 
-
 #servers
 alias nginx='sudo service nginx restart'
 alias pystop='sudo service nginx stop'
@@ -26,13 +24,18 @@ alias phpstop='sudo service apache2 stop'
 alias nlog='vi /var/log/nginx/error.log'
 alias ruta='sudo xed /etc/nginx/sites-available/rutas'
 
-
 #environments folder
 alias bac='cd /home/pedro/Documents/proyectos/'
 alias fro='cd /var/www/html/'
 
+#pass
+alias hot='pass -c Email/hotmail.com'
+alias github='pass -c Git-repositories/github'
 
 #miscelanios
 alias ser='grep -r -n '
 alias sshkey='cat ~/.ssh/id_rsa.pub | xclip -sel clip'
 alias pyserv='python3.5 -m http.server 8000'
+
+#docker-splash
+alias doc='sudo docker run -p 5023:5023 -p 8050:8050 -p 8051:8051 scrapinghub/splash --max-timeout 9600 --disable-private-mode'
